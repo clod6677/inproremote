@@ -1,0 +1,6 @@
+cron:
+
+- description: Five minute ping
+  url: /crons/5min/
+  schedule: every 5 minutes
+

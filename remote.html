@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <form action="/" id="sendForm">
+   <input type="text" name="command" placeholder="command..." />
+   <input type="submit" value="command_to_send" />
+  </form>
+  <!-- the result of the search will be rendered inside this div -->
+  <div id="result"></div>
+
+<script>
+  /* attach a submit handler to the form */
+  $("#sendForm").submit(function(event) {
+
+    /* stop form from submitting normally */
+    event.preventDefault(); 
+        
+    /* get some values from elements on the page: */
+    var $form = $( this ),
+        term = $form.find( 'input[name="command"]' ).val(),
+        //url = $form.attr( 'action' );
+    	url = './'
+
+    /* Send the data using post and put the results in a div */
+    $.post( url, { command: term },
+      function( data ) {
+          var content = $( data ).find( '#command' );
+          $( "#result" ).empty().append( content );
+      }
+    );
+  });
+</script>
+
+</body>
+</html>

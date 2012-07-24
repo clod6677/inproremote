@@ -1,0 +1,97 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	background:url('../img/bg_tile.jpg');
+}
+
+body{
+	color:#fcfcfc;
+	background:url('../img/bg_vert.jpg') repeat-x;
+	font:16px "Segoe UI","Lucida Sans Unicode",Arial,sans-serif;
+	min-height:500px;
+}
+
+
+/*===============================
+*	The main page elements:
+================================*/
+
+
+#page{
+	width:960px;
+	margin:0 auto;
+}
+
+#header{
+	position:relative;
+	height:86px
+}
+
+#page h1{
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 44px;
+}
+
+#page h2,
+#page h3{
+	color: #575B63;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 42px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+/*===============================
+*	The sections:
+================================*/
+
+
+#page h3{
+	font-size: 15px;
+	line-height: 34px;
+	padding: 0 15px;
+}
+
+#page .section{
+	background: url("../img/sprite.png") repeat-x 0 -121px #FAFAFA;
+	border: 1px solid #D1D3D5;
+	min-height: 300px;
+	margin: 40px 0;
+	overflow-x: hidden;
+	
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-moz-box-shadow: 0 0 1px #fff inset;
+	-webkit-box-shadow: 0 0 1px #fff inset;
+	box-shadow: 0 0 1px #fff inset;
+}
+
+
+/*===============================
+*	Additional page styles:
+================================*/
+
+
+#footer{
+	color:#777;
+	text-align:center;
+	font-size:11px;
+	padding-bottom:20px;
+}
+
+a, a:visited {
+	color: #4EA0E2;
+	outline: none;
+	text-decoration: underline;
+}
+
+a:hover{
+	text-decoration:none;
+}

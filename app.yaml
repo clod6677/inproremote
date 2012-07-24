@@ -1,0 +1,17 @@
+application: inproengine
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /assets
+  static_dir: assets
+
+- url: /favicon.ico
+  static_files: assets/img/favicon.ico
+  upload: assets/img/favicon.ico
+    
+- url: /.*
+  script: inproengine.app
